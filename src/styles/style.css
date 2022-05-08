@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "League Gothic", sans-serif;
+  background-color: #b8bcbc;
+}
+
+.homepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  padding: 5rem 10rem;
+  border-radius: 0%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 685px) {
+  .homepage {
+    padding: 3rem;
+  }
+}
+
+.Profiles {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.Profiles .Profile {
+  border-bottom: 1px solid #c0bdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Profiles .Profile .profile-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0.3;
+      -ms-flex-positive: 0.3;
+          flex-grow: 0.3;
+}
+
+.Profiles .Profile .profile-left img {
+  height: 5rem;
+  margin: 2rem 1rem;
+  border-radius: 50%;
+  border: 1px solid #bfb3b3;
+}
+
+.Profiles .Profile .profile-middle {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.Profiles .Profile .profile-middle .Name {
+  font-size: 2rem;
+}
+
+.Profiles .Profile .profile-middle .content {
+  display: none;
+}
+
+.Profiles .Profile .profile-middle .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Profiles .Profile .profile-middle .tag p {
+  padding: 0.25rem 0.75rem;
+  background-color: #bab6b6;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.25rem;
+}
+
+.Profiles .Profile .profile-middle .input:focus {
+  outline: none;
+}
+
+.Profiles .Profile .profile-middle #addTag {
+  border: none;
+  border-bottom: 2px solid #989292;
+}
+
+.Profiles .Profile .profile-right {
+  padding: 1rem;
+  -webkit-box-flex: 0.1;
+      -ms-flex-positive: 0.1;
+          flex-grow: 0.1;
+}
+
+@media screen and (max-width: 685px) {
+  .Profile {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .profile-left {
+    width: 100%;
+  }
+}
+
+.searchArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 1rem;
+  background-color: white;
+}
+
+.searchArea .input {
+  border: none;
+  border-bottom: 2px solid #d2cbcb;
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.searchArea .input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 685px) {
+  .searchArea .input {
+    font-size: 1.25rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

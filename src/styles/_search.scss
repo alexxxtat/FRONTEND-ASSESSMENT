@@ -1,0 +1,24 @@
+.searchArea {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  .input {
+    //background-color: aqua;
+    border: none;
+    border-bottom: 2px solid rgb(210, 203, 203);
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .input:focus {
+    outline: none;
+  }
+}
+@media screen and (max-width: 685px) {
+  .searchArea {
+    .input {
+      font-size: 1.25rem;
+    }
+  }
+}

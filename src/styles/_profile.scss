@@ -1,0 +1,63 @@
+.Profiles {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  .Profile {
+    border-bottom: 1px solid rgb(192, 189, 189);
+    display: flex;
+    .profile-left {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 5rem;
+        margin: 2rem 1rem;
+        border-radius: 50%;
+        border: 1px solid rgb(191, 179, 179);
+      }
+      flex-grow: 0.3;
+    }
+    .profile-middle {
+      .Name {
+        font-size: 2rem;
+      }
+      padding: 1rem;
+      flex-grow: 1;
+      .content {
+        display: none;
+      }
+      .tag {
+        display: flex;
+
+        p {
+          padding: 0.25rem 0.75rem;
+          background-color: rgb(186, 182, 182);
+          width: fit-content;
+          margin: 0.25rem;
+          //border-radius: 1rem;
+        }
+      }
+      .input:focus {
+        outline: none;
+      }
+      #addTag {
+        border: none;
+        border-bottom: 2px solid rgb(152, 146, 146);
+      }
+    }
+
+    .profile-right {
+      padding: 1rem;
+      flex-grow: 0.1;
+    }
+  }
+}
+@media screen and (max-width: 685px) {
+  .Profile {
+    flex-wrap: wrap;
+  }
+  .profile-left {
+    width: 100%;
+  }
+}
